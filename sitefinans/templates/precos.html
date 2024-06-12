@@ -1,10 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Precos</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% load static %}
 
-</body>
-</html>
+{% block titulo %}
+  Preços
+{% endblock %}
+
+{% block conteudo %}
+
+    <section class="caixa"><!--/Início seção saiba -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex">
+            <div class="align-self-center">
+              <h2>Preços</h2>
+              <p>
+                Temos o melhor preço do mercado! não é pirâmide, não é golpe. Confia!
+              </p>
+              <a href="" class="btn btn-primary">Veja mais</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="{% static 'img/saiba.png' %}" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section><!--/FIM seção saiba -->
+
+
+{% endblock %}
